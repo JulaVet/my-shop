@@ -39,6 +39,7 @@
 }
 
 .products__item:active .product__item-btn {
+    background: url(../img/add_to_cardhov.png);
     background-color: #F16D7F;
     opacity: 0.7;
     display: block;

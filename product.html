@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="script/script.js"></script>
+    <script src="https://kit.fontawesome.com/b4424573eb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -116,66 +117,112 @@
     </header>
     <main>
         <section>
-            <div class="cart_back">
-                <h2 class="cart_title container">SHOPPING CART</h2>
+            <div class="product__back">
+                <h2 class="product__title container">NEW ARRIVALS</h2>
+                <div class="product__list-wrp">
+                    <ul class="product__cheklist">
+                        <li class="product__cheklist-item">
+                            <a class="product__cheklist-link" href="#">HOME</a>
+                        </li>
+                        <li class="product__cheklist-item">
+                            <a class="product__cheklist-link" href="#">MEN</a>
+                        </li>
+                        <li class="product__cheklist-itemtogle">
+                            <a class="product__cheklist-link" href="#">NEW ARRIVALS</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
-        <section>
-            <div class="carts container">
-                <div class="shopping__carts">
-                    <div class="item__cart">
-                        <img src="img/shopping_cart1.png" alt="photo">
-                        <div class="item__cart-info">
-                            <p class="cart-title">MANGO PEOPLE T-SHIRT</p>
-                            <p class="cart-text">Price: <span class="shopping-dollar">$300</span></p>
-                            <p class="cart-text">Color: Red</p>
-                            <p class="cart-text">Size: Xl</p>
-                            <p class="cart-text">Quantity:</p>
-                        </div>
-                    </div>
-                    <div class="item__cart">
-                        <img src="img/shopping_cart2.png" alt="photo">
-                        <div class="item__cart-info">
-                            <p class="cart-title">MANGO PEOPLE T-SHIRT</p>
-                            <p class="cart-text">Price: <span class="text-dollar">$300</span></p>
-                            <p class="cart-text">Color: Red</p>
-                            <p class="cart-text">Size: Xl</p>
-                            <p class="cart-text">Quantity:</p>
-                        </div>
-                    </div>
-                    <div class="carts__buttons">
-                        <button class="cart__btn" type="button">CLEAR SHOPPING CART</button>
-                        <button class="cart__btn" type="button">CONTINUE SHOPPING</button>
+        <section class="product__card-back">
+            <img class="product__scroll" src="./img/product_scroll1.png" alt="woman">
+            <button type="button" class="product__scroll-btn1"><i class="fas fa-angle-left"></i></i></button>
+            <button type="button" class="product__scroll-btn2"><i class="fas fa-angle-right"></i></button>
+        </section>
+        <section class="product__description">
+            <div class="product__description ">
+                <div class="product__description-card">
+                    <div class="description__card">
+                        <h2 class="description__card-title">WOMEN COLLECTION</h2>
+                        <img class="band__card" src="./img/band_card.png" alt="band">
+                        <p class="subtitle__card">MOSCHINO CHEAP AND CHIC</p>
+                        <p class="text__card">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional
+                            portals. </p>
+                        <p class="price__card">$561</p>
+                        <hr class="card__line">
                     </div>
                 </div>
-                <div class="shopping__form">
-                    <form action="#">
-                        <p class="shopping__form-title">SHIPPING ADRESS</p>
-                        <fieldset>
-                            <label for="bangladesh">
-                        <input class="shopping__input" type="text" id="bangladesh" placeholder="Bangladesh">
-                    </label><br>
-                            <label for="state">
-                        <input class="shopping__input" type="text" id="state" placeholder="State">
-                    </label><br>
-                            <label for="postcode">
-                        <input class="shopping__input" type="text" id="postcode" placeholder="Postcode / Zip">
-                    </label><br>
-                            <label for="quote">
-                        <input class="shopping__input" type="text" id="quote" placeholder="GET A QUOTE">
-                    </label>
-                        </fieldset>
-                        <fieldset>
-                            <div class="proceed__form">
-                                <p class="sub-price">SUB TOTAL $900</p>
-                                <p class="grand-price">GRAND TOTAL <span class="shopping-dollar">$900</span></p>
-                                <hr class="proceed__form-hr">
-                                <button type="submit" class="proceed__form-btn">PROCEED TO CHECKOUT</button>
-                            </div>
-                        </fieldset>
-                    </form>
+                <div class="description__options ">
+                    <nav class="nav__option-color">
+                        <ul class="nav__option-list">
+                            <li class="nav-option-item__link"><input type="checkbox" id="white" name="white">
+                                <label for="white">White</label></li>
+                            <li class="nav-option-item__link"><input type="checkbox" id="black" name="black">
+                                <label for="black">Black</label></li>
+                            <li class="nav-option-item__link"><input type="checkbox" id="blue" name="blue">
+                                <label for="blue">Blue</label></li>
+                            <li class="nav-option-item__link"><input type="checkbox" id="orange" name="orange">
+                                <label for="orange">Orange</label></li>
+                        </ul>
+                    </nav>
+                    <nav class="nav__option-size">
+                        <ul class="nav__option-list">
+                            <li class="nav-option-item__link"><input type="checkbox" id="white" name="white">
+                                <label for="white">XS</label></li>
+                            <li class="nav-option-item__link"><input type="checkbox" id="black" name="black">
+                                <label for="black">S</label></li>
+                            <li class="nav-option-item__link"><input type="checkbox" id="blue" name="blue">
+                                <label for="blue">M</label></li>
+                            <li class="nav-option-item__link"><input type="checkbox" id="orange" name="orange">
+                                <label for="orange">L</label></li>
+                            <li class="nav-option-item__link"><input type="checkbox" id="orange" name="orange">
+                                <label for="orange">XL</label></li>
+                        </ul>
+                    </nav>
+                    <nav class="nav__option-quant">
+                        <ul class="nav__option-list">
+                            <li class="nav-option-item__link"><input type="checkbox" id="white" name="white">
+                                <label for="white">White</label></li>
+                            <li class="nav-option-item__link"><input type="checkbox" id="black" name="black">
+                                <label for="black">Black</label></li>
+                            <li class="nav-option-item__link"><input type="checkbox" id="blue" name="blue">
+                                <label for="blue">Blue</label></li>
+                            <li class="nav-option-item__link"><input type="checkbox" id="orange" name="orange">
+                                <label for="orange">Orange</label></li>
+                        </ul>
+                    </nav>
+                    <button type="button" class="opt_btn options__button1">CHOOSE COLOR &nbsp;<i class="fas fa-angle-down"></i></button>
+                    <button type="button" class="opt_btn options__button2">CHOOSE SIZE &nbsp;<i class="fas fa-angle-down"></i></button>
+                    <button type="button" class="opt_btn options__button3">CHOOSE QUANTITY &nbsp;<i class="fas fa-angle-down"></i></button>
+                    <button type="button" class="description__options-btn">Add to Cart</button>
+                </div>
+                <div class="product_presentation container">
+                    <ul class="product__presentation__list">
+                        <li class="product__presentation__item">
+                            <button class="product__item-btn"></button>
+                            <img class="products__item-img" src="./img/product4.jpg" alt="product4">
+                            <h3 class="products__item-title">ellery x m'o capsule</h3>
+                            <p class="products__item-text">Known for her sculptural takes on traditional tailoring, australian arbiter of cool kym ellery teams up with moda operandi.</p>
+                            <p class="products__item-price">$52.00</p>
+                        </li>
+                        <li class="product__presentation__item">
+                            <button class="product__item-btn"></button>
+                            <img class="products__item-img" src="./img/product3.jpg" alt="product3">
+                            <h3 class="products__item-title">ellery x m'o capsule</h3>
+                            <p class="products__item-text">Known for her sculptural takes on traditional tailoring, australian arbiter of cool kym ellery teams up with moda operandi.</p>
+                            <p class="products__item-price">$52.00</p>
+                        </li>
+                        <li class="product__presentation__item">
+                            <button class="product__item-btn"></button>
+                            <img class="products__item-img" src="./img/product6.jpg" alt="product6">
+                            <h3 class="products__item-title">ellery x m'o capsule</h3>
+                            <p class="products__item-text">Known for her sculptural takes on traditional tailoring, australian arbiter of cool kym ellery teams up with moda operandi.</p>
+                            <p class="products__item-price">$52.00</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
+
         </section>
     </main>
     <footer class="footer">
@@ -244,7 +291,6 @@
                         </clipPath>
                         </defs>
                         </svg></a>
-              </a>
                 </li>
             </ul>
         </div>

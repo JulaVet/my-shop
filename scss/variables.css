@@ -1,0 +1,117 @@
+@media (max-width: 1599px) {
+    .container {
+        max-width: 735px;
+        width: auto;
+    }
+    .brand__img {
+        width: 386px;
+        height: 369px;
+        margin: 0;
+    }
+    .sales__item {
+        width: 232px;
+    }
+    .sales__item--accesories {
+        width: 734px;
+    }
+    .benefits__list {
+        display: block;
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+    .benefits__item {
+        padding-top: 40px;
+    }
+    .footer {
+        background-image: url(../img/footer_mobile.png);
+        padding-top: 30px;
+        min-height: 650px;
+    }
+    .footer__wrp {
+        display: block;
+    }
+    .footer__holder {
+        margin-top: 50px;
+    }
+    .footer__form {
+        margin-top: 0px;
+    }
+    .footer__socials-title {
+        padding: 30px 0px 0px 30px;
+    }
+    .footer__socials-list {
+        padding: 20px 0px 0px 0px;
+    }
+}
+
+@media (max-width: 704px) {
+    .container {
+        max-width: 343px;
+        width: auto;
+    }
+    .header__link {
+        display: none;
+    }
+    .header__search-input:focus {
+        width: 100px;
+    }
+    .brand {
+        height: 365px;
+    }
+    .brand__img {
+        display: none;
+    }
+    .brand__title {
+        max-width: 100%;
+        font-size: 38px;
+        line-height: 46px;
+    }
+    .brand__subtitle {
+        max-width: 100%;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 46px;
+    }
+    .sales__item {
+        width: 343px;
+        margin-bottom: 30px;
+    }
+    .sales__item--accesories {
+        margin-top: 0px;
+    }
+    .benefits__list {
+        display: block;
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+    .benefits__item {
+        padding-top: 40px;
+    }
+    .footer {
+        background-image: url(../img/footer_mobile.png);
+        padding-top: 30px;
+        min-height: 650px;
+    }
+    .footer__wrp {
+        display: block;
+    }
+    .footer__holder {
+        margin-top: 50px;
+    }
+    .footer__form {
+        margin-top: 0px;
+    }
+    .footer__socials {
+        flex-direction: column-reverse;
+        position: relative;
+        margin-top: 30px;
+        min-height: 145px;
+    }
+    .footer__socials-title {
+        padding: 0px 0px 32px 69px;
+    }
+    .footer__socials-list {
+        padding: 28px 0px 0px 100px;
+    }
+}
